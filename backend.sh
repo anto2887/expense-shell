@@ -35,7 +35,7 @@ echo $?
 
 echo -e "${color} Install mysql and load the schema to the db \e[0m"
 dnf install mysql -y
-mysql -h 172.31.17.54 -uroot -pExpenseApp@1 < /app/schema/backend.sql
+mysql -h 172.31.23.112 -uroot -pExpenseApp@1 < /app/schema/backend.sql
 echo $?
 
 echo -e "${color} Reload the daemon service, enable and start the backend service \e[0m"
